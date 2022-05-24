@@ -1,0 +1,11 @@
+digraph HoTT_Algebra_AbGroups_AbSES_BaerSum {
+  graph [ratio=0.5]
+  node [style=filled]
+BaerSum_abses_baer_sum [label="abses_baer_sum", URL=<BaerSum.html#abses_baer_sum>, peripheries=3, fillcolor="#F070D1"] ;
+BaerSum_abses_direct_sum [label="abses_direct_sum", URL=<BaerSum.html#abses_direct_sum>, fillcolor="#F070D1"] ;
+BaerSum_ab_biprod_exact [label="ab_biprod_exact", URL=<BaerSum.html#ab_biprod_exact>, fillcolor="#F070D1"] ;
+  BaerSum_abses_baer_sum -> BaerSum_abses_direct_sum [] ;
+  BaerSum_abses_direct_sum -> BaerSum_ab_biprod_exact [] ;
+subgraph cluster_BaerSum { label="BaerSum"; fillcolor="#FFFFC3"; labeljust=l; style=filled 
+BaerSum_ab_biprod_exact; BaerSum_abses_direct_sum; BaerSum_abses_baer_sum; };
+} /* END */

@@ -1,0 +1,36 @@
+digraph HoTT_Algebra_AbGroups_AbSES_Pushout {
+  graph [ratio=0.5]
+  node [style=filled]
+Pushout_abses_pushout_compose [label="abses_pushout_compose", URL=<Pushout.html#abses_pushout_compose>, peripheries=3, fillcolor="#F070D1"] ;
+Pushout_abses_pushout_compose_ [label="abses_pushout_compose'", URL=<Pushout.html#abses_pushout_compose'>, fillcolor="#F070D1"] ;
+Pushout_abses_pushout [label="abses_pushout", URL=<Pushout.html#abses_pushout>, fillcolor="#F070D1"] ;
+Pushout_abses_pushout_ [label="abses_pushout'", URL=<Pushout.html#abses_pushout'>, fillcolor="#F070D1"] ;
+Pushout_abses_pushout_point [label="abses_pushout_point", URL=<Pushout.html#abses_pushout_point>, peripheries=3, fillcolor="#F070D1"] ;
+Pushout_abses_pushout_point_ [label="abses_pushout_point'", URL=<Pushout.html#abses_pushout_point'>, fillcolor="#F070D1"] ;
+Pushout_ap_abses_pushout_data [label="ap_abses_pushout_data", URL=<Pushout.html#ap_abses_pushout_data>, peripheries=3, fillcolor="#F070D1"] ;
+Pushout_ap_abses_pushout [label="ap_abses_pushout", URL=<Pushout.html#ap_abses_pushout>, fillcolor="#F070D1"] ;
+Pushout_abses_pushout_path_data_1 [label="abses_pushout_path_data_1", URL=<Pushout.html#abses_pushout_path_data_1>, fillcolor="#F070D1"] ;
+Pushout_is0functor_abses_pushout [label="is0functor_abses_pushout", URL=<Pushout.html#is0functor_abses_pushout>, fillcolor="#F070D1"] ;
+Pushout_abses_pushout_morphism_rec_beta [label="abses_pushout_morphism_rec_beta", URL=<Pushout.html#abses_pushout_morphism_rec_beta>, peripheries=3, fillcolor="#F070D1"] ;
+Pushout_abses_pushout_morphism_rec [label="abses_pushout_morphism_rec", URL=<Pushout.html#abses_pushout_morphism_rec>, fillcolor="#F070D1"] ;
+Pushout_abses_pushout_morphism [label="abses_pushout_morphism", URL=<Pushout.html#abses_pushout_morphism>, fillcolor="#F070D1"] ;
+Pushout_abses_pushout0 [label="abses_pushout0", URL=<Pushout.html#abses_pushout0>, fillcolor="#F070D1"] ;
+  Pushout_abses_pushout_compose -> Pushout_abses_pushout_compose_ [] ;
+  Pushout_abses_pushout_compose_ -> Pushout_abses_pushout [] ;
+  Pushout_abses_pushout_compose_ -> Pushout_abses_pushout_morphism [] ;
+  Pushout_abses_pushout -> Pushout_abses_pushout_ [] ;
+  Pushout_abses_pushout_ -> Pushout_abses_pushout_point_ [] ;
+  Pushout_abses_pushout_ -> Pushout_is0functor_abses_pushout [] ;
+  Pushout_abses_pushout_point -> Pushout_abses_pushout_point_ [] ;
+  Pushout_abses_pushout_point_ -> Pushout_abses_pushout0 [] ;
+  Pushout_ap_abses_pushout_data -> Pushout_ap_abses_pushout [] ;
+  Pushout_ap_abses_pushout -> Pushout_abses_pushout_path_data_1 [] ;
+  Pushout_abses_pushout_path_data_1 -> Pushout_is0functor_abses_pushout [] ;
+  Pushout_is0functor_abses_pushout -> Pushout_abses_pushout0 [] ;
+  Pushout_abses_pushout_morphism_rec_beta -> Pushout_abses_pushout_morphism_rec [] ;
+  Pushout_abses_pushout_morphism_rec_beta -> Pushout_abses_pushout_morphism [] ;
+  Pushout_abses_pushout_morphism_rec -> Pushout_abses_pushout0 [] ;
+  Pushout_abses_pushout_morphism -> Pushout_abses_pushout0 [] ;
+subgraph cluster_Pushout { label="Pushout"; fillcolor="#FFFFC3"; labeljust=l; style=filled 
+Pushout_abses_pushout0; Pushout_abses_pushout_morphism; Pushout_abses_pushout_morphism_rec; Pushout_abses_pushout_morphism_rec_beta; Pushout_is0functor_abses_pushout; Pushout_abses_pushout_path_data_1; Pushout_ap_abses_pushout; Pushout_ap_abses_pushout_data; Pushout_abses_pushout_point_; Pushout_abses_pushout_point; Pushout_abses_pushout_; Pushout_abses_pushout; Pushout_abses_pushout_compose_; Pushout_abses_pushout_compose; };
+} /* END */

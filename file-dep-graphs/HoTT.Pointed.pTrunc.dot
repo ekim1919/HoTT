@@ -1,0 +1,41 @@
+digraph HoTT_Pointed_pTrunc {
+  graph [ratio=0.5]
+  node [style=filled]
+pTrunc_ptr_loops_commutes [label="ptr_loops_commutes", URL=<pTrunc.html#ptr_loops_commutes>, peripheries=3, fillcolor="#F070D1"] ;
+pTrunc_path_Tr_commutes [label="path_Tr_commutes", URL=<pTrunc.html#path_Tr_commutes>, fillcolor="#F070D1"] ;
+pTrunc_pequiv_ptr_functor [label="pequiv_ptr_functor", URL=<pTrunc.html#pequiv_ptr_functor>, peripheries=3, fillcolor="#F070D1"] ;
+pTrunc_ptr_loops_eq [label="ptr_loops_eq", URL=<pTrunc.html#ptr_loops_eq>, peripheries=3, fillcolor="#F070D1"] ;
+pTrunc_ptr_iterated_loops [label="ptr_iterated_loops", URL=<pTrunc.html#ptr_iterated_loops>, peripheries=3, fillcolor="#F070D1"] ;
+pTrunc_ptr_loops [label="ptr_loops", URL=<pTrunc.html#ptr_loops>, fillcolor="#F070D1"] ;
+pTrunc_ptr_pequiv [label="ptr_pequiv", URL=<pTrunc.html#ptr_pequiv>, peripheries=3, fillcolor="#F070D1"] ;
+pTrunc_ptr_functor_pconst [label="ptr_functor_pconst", URL=<pTrunc.html#ptr_functor_pconst>, peripheries=3, fillcolor="#F070D1"] ;
+pTrunc_is1functor_ptr [label="is1functor_ptr", URL=<pTrunc.html#is1functor_ptr>, fillcolor="#F070D1"] ;
+pTrunc_is0functor_ptr [label="is0functor_ptr", URL=<pTrunc.html#is0functor_ptr>, fillcolor="#F070D1"] ;
+pTrunc_equiv_ptr_rec [label="equiv_ptr_rec", URL=<pTrunc.html#equiv_ptr_rec>, peripheries=3, fillcolor="#F070D1"] ;
+pTrunc_pTr_rec [label="pTr_rec", URL=<pTrunc.html#pTr_rec>, fillcolor="#F070D1"] ;
+pTrunc_pequiv_ptr [label="pequiv_ptr", URL=<pTrunc.html#pequiv_ptr>, peripheries=3, fillcolor="#F070D1"] ;
+pTrunc_isequiv_ptr [label="isequiv_ptr", URL=<pTrunc.html#isequiv_ptr>, fillcolor="#F070D1"] ;
+pTrunc_ptr [label="ptr", URL=<pTrunc.html#ptr>, fillcolor="#F070D1"] ;
+pTrunc_pTr [label="pTr", URL=<pTrunc.html#pTr>, fillcolor="#F070D1"] ;
+pTrunc_ispointed_tr [label="ispointed_tr", URL=<pTrunc.html#ispointed_tr>, fillcolor="#F070D1"] ;
+  pTrunc_ptr_loops_commutes -> pTrunc_path_Tr_commutes [] ;
+  pTrunc_ptr_loops_commutes -> pTrunc_ptr_loops [] ;
+  pTrunc_ptr_loops_commutes -> pTrunc_ptr [] ;
+  pTrunc_pequiv_ptr_functor -> pTrunc_is0functor_ptr [] ;
+  pTrunc_ptr_loops_eq -> pTrunc_ptr_loops [] ;
+  pTrunc_ptr_iterated_loops -> pTrunc_ptr_loops [] ;
+  pTrunc_ptr_loops -> pTrunc_pTr [] ;
+  pTrunc_ptr_pequiv -> pTrunc_is1functor_ptr [] ;
+  pTrunc_ptr_functor_pconst -> pTrunc_is0functor_ptr [] ;
+  pTrunc_is1functor_ptr -> pTrunc_is0functor_ptr [] ;
+  pTrunc_is0functor_ptr -> pTrunc_pTr [] ;
+  pTrunc_equiv_ptr_rec -> pTrunc_pTr_rec [] ;
+  pTrunc_equiv_ptr_rec -> pTrunc_ptr [] ;
+  pTrunc_pTr_rec -> pTrunc_pTr [] ;
+  pTrunc_pequiv_ptr -> pTrunc_isequiv_ptr [] ;
+  pTrunc_isequiv_ptr -> pTrunc_ptr [] ;
+  pTrunc_ptr -> pTrunc_pTr [] ;
+  pTrunc_pTr -> pTrunc_ispointed_tr [] ;
+subgraph cluster_pTrunc { label="pTrunc"; fillcolor="#FFFFC3"; labeljust=l; style=filled 
+pTrunc_ispointed_tr; pTrunc_pTr; pTrunc_ptr; pTrunc_isequiv_ptr; pTrunc_pequiv_ptr; pTrunc_pTr_rec; pTrunc_equiv_ptr_rec; pTrunc_is0functor_ptr; pTrunc_is1functor_ptr; pTrunc_ptr_functor_pconst; pTrunc_ptr_pequiv; pTrunc_ptr_loops; pTrunc_ptr_iterated_loops; pTrunc_ptr_loops_eq; pTrunc_pequiv_ptr_functor; pTrunc_path_Tr_commutes; pTrunc_ptr_loops_commutes; };
+} /* END */

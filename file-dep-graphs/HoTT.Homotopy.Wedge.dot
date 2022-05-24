@@ -1,0 +1,11 @@
+digraph HoTT_Homotopy_Wedge {
+  graph [ratio=0.5]
+  node [style=filled]
+Wedge_wedge_incl [label="wedge_incl", URL=<Wedge.html#wedge_incl>, peripheries=3, fillcolor="#F070D1"] ;
+Wedge_wglue [label="wglue", URL=<Wedge.html#wglue>, peripheries=3, fillcolor="#F070D1"] ;
+Wedge_Wedge [label="Wedge", URL=<Wedge.html#Wedge>, fillcolor="#F070D1"] ;
+  Wedge_wedge_incl -> Wedge_Wedge [] ;
+  Wedge_wglue -> Wedge_Wedge [] ;
+subgraph cluster_Wedge { label="Wedge"; fillcolor="#FFFFC3"; labeljust=l; style=filled 
+Wedge_Wedge; Wedge_wglue; Wedge_wedge_incl; };
+} /* END */

@@ -1,0 +1,7 @@
+digraph HoTT_Homotopy_Freudenthal {
+  graph [ratio=0.5]
+  node [style=filled]
+Freudenthal_freudenthal [label="freudenthal", URL=<Freudenthal.html#freudenthal>, peripheries=3, fillcolor="#F070D1"] ;
+subgraph cluster_Freudenthal { label="Freudenthal"; fillcolor="#FFFFC3"; labeljust=l; style=filled 
+Freudenthal_freudenthal; };
+} /* END */

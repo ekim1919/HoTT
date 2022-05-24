@@ -1,0 +1,15 @@
+digraph HoTT_Pointed_pHomotopy {
+  graph [ratio=0.5]
+  node [style=filled]
+pHomotopy_ishprop_phomotopy_hset [label="ishprop_phomotopy_hset", URL=<pHomotopy.html#ishprop_phomotopy_hset>, peripheries=3, fillcolor="#F070D1"] ;
+pHomotopy_phomotopy_hcompose [label="phomotopy_hcompose", URL=<pHomotopy.html#phomotopy_hcompose>, peripheries=3, fillcolor="#F070D1"] ;
+pHomotopy_phomotopy_path_V [label="phomotopy_path_V", URL=<pHomotopy.html#phomotopy_path_V>, peripheries=3, fillcolor="#F070D1"] ;
+pHomotopy_phomotopy_path2 [label="phomotopy_path2", URL=<pHomotopy.html#phomotopy_path2>, peripheries=3, fillcolor="#F070D1"] ;
+pHomotopy_pmap_prewhisker [label="pmap_prewhisker", URL=<pHomotopy.html#pmap_prewhisker>, peripheries=3, fillcolor="#F070D1"] ;
+pHomotopy_pmap_postwhisker [label="pmap_postwhisker", URL=<pHomotopy.html#pmap_postwhisker>, peripheries=3, fillcolor="#F070D1"] ;
+pHomotopy_phomotopy_path_pp [label="phomotopy_path_pp", URL=<pHomotopy.html#phomotopy_path_pp>, peripheries=3, fillcolor="#F070D1"] ;
+pHomotopy_phomotopy_inverse_1 [label="phomotopy_inverse_1", URL=<pHomotopy.html#phomotopy_inverse_1>, fillcolor="#F070D1"] ;
+  pHomotopy_phomotopy_path_V -> pHomotopy_phomotopy_inverse_1 [] ;
+subgraph cluster_pHomotopy { label="pHomotopy"; fillcolor="#FFFFC3"; labeljust=l; style=filled 
+pHomotopy_phomotopy_inverse_1; pHomotopy_phomotopy_path_pp; pHomotopy_pmap_postwhisker; pHomotopy_pmap_prewhisker; pHomotopy_phomotopy_path2; pHomotopy_phomotopy_path_V; pHomotopy_phomotopy_hcompose; pHomotopy_ishprop_phomotopy_hset; };
+} /* END */

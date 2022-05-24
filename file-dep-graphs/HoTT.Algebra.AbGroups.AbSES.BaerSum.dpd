@@ -1,0 +1,5 @@
+N: 3 "ab_biprod_exact" [body=yes, kind=cnst, prop=no, path="BaerSum", ];
+N: 1 "abses_baer_sum" [body=yes, kind=cnst, prop=no, path="BaerSum", ];
+N: 2 "abses_direct_sum" [body=yes, kind=cnst, prop=no, path="BaerSum", ];
+E: 1 2 [weight=1, ];
+E: 2 3 [weight=1, ];

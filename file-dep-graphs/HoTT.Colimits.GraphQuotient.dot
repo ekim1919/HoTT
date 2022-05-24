@@ -1,0 +1,22 @@
+digraph HoTT_Colimits_GraphQuotient {
+  graph [ratio=0.5]
+  node [style=filled]
+GraphQuotient_GraphQuotient_GraphQuotient_ind_beta_gqglue [label="GraphQuotient_ind_beta_gqglue", URL=<GraphQuotient.html#GraphQuotient.GraphQuotient_ind_beta_gqglue>, fillcolor="#FACDEF"] ;
+GraphQuotient_GraphQuotient_GraphQuotient_ind [label="GraphQuotient_ind", URL=<GraphQuotient.html#GraphQuotient.GraphQuotient_ind>, fillcolor="#F070D1"] ;
+GraphQuotient_GraphQuotient_gqglue [label="gqglue", URL=<GraphQuotient.html#GraphQuotient.gqglue>, fillcolor="#FACDEF"] ;
+GraphQuotient_GraphQuotient_gq [label="gq", URL=<GraphQuotient.html#GraphQuotient.gq>, fillcolor="#7FAAFF"] ;
+GraphQuotient_GraphQuotient_GraphQuotient [label="GraphQuotient", URL=<GraphQuotient.html#GraphQuotient.GraphQuotient>, fillcolor="#E2CDFA"] ;
+GraphQuotient_GraphQuotient_rec_beta_gqglue [label="GraphQuotient_rec_beta_gqglue", URL=<GraphQuotient.html#GraphQuotient_rec_beta_gqglue>, peripheries=3, fillcolor="#F070D1"] ;
+GraphQuotient_GraphQuotient_rec [label="GraphQuotient_rec", URL=<GraphQuotient.html#GraphQuotient_rec>, fillcolor="#F070D1"] ;
+  GraphQuotient_GraphQuotient_GraphQuotient_ind_beta_gqglue -> GraphQuotient_GraphQuotient_GraphQuotient_ind [] ;
+  GraphQuotient_GraphQuotient_GraphQuotient_ind -> GraphQuotient_GraphQuotient_gqglue [] ;
+  GraphQuotient_GraphQuotient_gqglue -> GraphQuotient_GraphQuotient_gq [] ;
+  GraphQuotient_GraphQuotient_gqglue -> GraphQuotient_GraphQuotient_GraphQuotient [] ;
+  GraphQuotient_GraphQuotient_rec_beta_gqglue -> GraphQuotient_GraphQuotient_GraphQuotient_ind_beta_gqglue [] ;
+  GraphQuotient_GraphQuotient_rec_beta_gqglue -> GraphQuotient_GraphQuotient_rec [] ;
+  GraphQuotient_GraphQuotient_rec -> GraphQuotient_GraphQuotient_GraphQuotient_ind [] ;
+subgraph cluster_GraphQuotient { label="GraphQuotient"; fillcolor="#FFFFC3"; labeljust=l; style=filled 
+subgraph cluster_GraphQuotient_GraphQuotient { label="GraphQuotient"; fillcolor="#FFFFA3"; labeljust=l; style=filled 
+GraphQuotient_GraphQuotient_GraphQuotient; GraphQuotient_GraphQuotient_gq; GraphQuotient_GraphQuotient_gqglue; GraphQuotient_GraphQuotient_GraphQuotient_ind; GraphQuotient_GraphQuotient_GraphQuotient_ind_beta_gqglue; };
+GraphQuotient_GraphQuotient_rec; GraphQuotient_GraphQuotient_rec_beta_gqglue; };
+} /* END */

@@ -1,0 +1,6 @@
+N: 4 "fold_left" [body=yes, kind=cnst, prop=no, path="List", ];
+N: 3 "fold_left_app" [body=yes, kind=cnst, prop=no, path="List", ];
+N: 2 "fold_right" [body=yes, kind=cnst, prop=no, path="List", ];
+N: 1 "fold_right_app" [body=yes, kind=cnst, prop=no, path="List", ];
+E: 1 2 [weight=19, ];
+E: 3 4 [weight=16, ];

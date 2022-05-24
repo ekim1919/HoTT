@@ -1,0 +1,11 @@
+digraph HoTT_Classes_tests_ring_tac {
+  graph [ratio=0.5]
+  node [style=filled]
+ring_tac_test5 [label="test5", URL=<ring_tac.html#test5>, peripheries=3, fillcolor="#F070D1"] ;
+ring_tac_test4 [label="test4", URL=<ring_tac.html#test4>, peripheries=3, fillcolor="#F070D1"] ;
+ring_tac_test3 [label="test3", URL=<ring_tac.html#test3>, peripheries=3, fillcolor="#F070D1"] ;
+ring_tac_test2 [label="test2", URL=<ring_tac.html#test2>, peripheries=3, fillcolor="#F070D1"] ;
+ring_tac_test1 [label="test1", URL=<ring_tac.html#test1>, peripheries=3, fillcolor="#F070D1"] ;
+subgraph cluster_ring_tac { label="ring_tac"; fillcolor="#FFFFC3"; labeljust=l; style=filled 
+ring_tac_test1; ring_tac_test2; ring_tac_test3; ring_tac_test4; ring_tac_test5; };
+} /* END */

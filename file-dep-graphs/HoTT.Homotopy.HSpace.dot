@@ -1,0 +1,38 @@
+digraph HoTT_Homotopy_HSpace {
+  graph [ratio=0.5]
+  node [style=filled]
+HSpace_equiv_hspace_right_op [label="equiv_hspace_right_op", URL=<HSpace.html#equiv_hspace_right_op>, peripheries=3, fillcolor="#F070D1"] ;
+HSpace_equiv_hspace_left_op [label="equiv_hspace_left_op", URL=<HSpace.html#equiv_hspace_left_op>, peripheries=3, fillcolor="#F070D1"] ;
+HSpace_isequiv_hspace_right_op [label="isequiv_hspace_right_op", URL=<HSpace.html#isequiv_hspace_right_op>, fillcolor="#F070D1"] ;
+HSpace_isequiv_hspace_left_op [label="isequiv_hspace_left_op", URL=<HSpace.html#isequiv_hspace_left_op>, fillcolor="#F070D1"] ;
+HSpace_hspace_id [label="hspace_id", URL=<HSpace.html#hspace_id>, fillcolor="#F070D1"] ;
+HSpace_hspace_mon_unit [label="hspace_mon_unit", URL=<HSpace.html#hspace_mon_unit>, peripheries=3, fillcolor="#F070D1"] ;
+HSpace_hspace_right_identity [label="hspace_right_identity", URL=<HSpace.html#hspace_right_identity>, peripheries=3, fillcolor="#F070D1"] ;
+HSpace_hspace_left_identity [label="hspace_left_identity", URL=<HSpace.html#hspace_left_identity>, peripheries=3, fillcolor="#F070D1"] ;
+HSpace_hspace_op [label="hspace_op", URL=<HSpace.html#hspace_op>, peripheries=3, fillcolor="#F070D1"] ;
+HSpace_IsHSpace_sind [label="IsHSpace_sind", URL=<HSpace.html#IsHSpace_sind>, peripheries=3, fillcolor="#F070D1"] ;
+HSpace_IsHSpace_rec [label="IsHSpace_rec", URL=<HSpace.html#IsHSpace_rec>, peripheries=3, fillcolor="#F070D1"] ;
+HSpace_IsHSpace_ind [label="IsHSpace_ind", URL=<HSpace.html#IsHSpace_ind>, peripheries=3, fillcolor="#7FFFD4"] ;
+HSpace_IsHSpace_rect [label="IsHSpace_rect", URL=<HSpace.html#IsHSpace_rect>, fillcolor="#F070D1"] ;
+HSpace_Build_IsHSpace [label="Build_IsHSpace", URL=<HSpace.html#Build_IsHSpace>, fillcolor="#7FAAFF"] ;
+HSpace_IsHSpace [label="IsHSpace", URL=<HSpace.html#IsHSpace>, fillcolor="#E2CDFA"] ;
+  HSpace_equiv_hspace_right_op -> HSpace_isequiv_hspace_right_op [] ;
+  HSpace_equiv_hspace_left_op -> HSpace_isequiv_hspace_left_op [] ;
+  HSpace_isequiv_hspace_right_op -> HSpace_hspace_id [] ;
+  HSpace_isequiv_hspace_right_op -> HSpace_IsHSpace [] ;
+  HSpace_isequiv_hspace_left_op -> HSpace_hspace_id [] ;
+  HSpace_isequiv_hspace_left_op -> HSpace_IsHSpace [] ;
+  HSpace_hspace_mon_unit -> HSpace_IsHSpace [] ;
+  HSpace_hspace_right_identity -> HSpace_IsHSpace [] ;
+  HSpace_hspace_left_identity -> HSpace_IsHSpace [] ;
+  HSpace_hspace_op -> HSpace_IsHSpace [] ;
+  HSpace_IsHSpace_sind -> HSpace_Build_IsHSpace [] ;
+  HSpace_IsHSpace_sind -> HSpace_IsHSpace [] ;
+  HSpace_IsHSpace_rec -> HSpace_IsHSpace_rect [] ;
+  HSpace_IsHSpace_ind -> HSpace_Build_IsHSpace [] ;
+  HSpace_IsHSpace_ind -> HSpace_IsHSpace [] ;
+  HSpace_IsHSpace_rect -> HSpace_Build_IsHSpace [] ;
+  HSpace_IsHSpace_rect -> HSpace_IsHSpace [] ;
+subgraph cluster_HSpace { label="HSpace"; fillcolor="#FFFFC3"; labeljust=l; style=filled 
+HSpace_IsHSpace; HSpace_Build_IsHSpace; HSpace_IsHSpace_rect; HSpace_IsHSpace_ind; HSpace_IsHSpace_rec; HSpace_IsHSpace_sind; HSpace_hspace_op; HSpace_hspace_left_identity; HSpace_hspace_right_identity; HSpace_hspace_mon_unit; HSpace_hspace_id; HSpace_isequiv_hspace_left_op; HSpace_isequiv_hspace_right_op; HSpace_equiv_hspace_left_op; HSpace_equiv_hspace_right_op; };
+} /* END */

@@ -1,0 +1,13 @@
+digraph HoTT_Equiv_BiInv {
+  graph [ratio=0.5]
+  node [style=filled]
+BiInv_equiv_biinv_isequiv [label="equiv_biinv_isequiv", URL=<BiInv.html#equiv_biinv_isequiv>, peripheries=3, fillcolor="#F070D1"] ;
+BiInv_isprop_biinv [label="isprop_biinv", URL=<BiInv.html#isprop_biinv>, fillcolor="#F070D1"] ;
+BiInv_isequiv_biinv [label="isequiv_biinv", URL=<BiInv.html#isequiv_biinv>, fillcolor="#F070D1"] ;
+BiInv_BiInv [label="BiInv", URL=<BiInv.html#BiInv>, fillcolor="#F070D1"] ;
+  BiInv_equiv_biinv_isequiv -> BiInv_isprop_biinv [] ;
+  BiInv_isprop_biinv -> BiInv_isequiv_biinv [] ;
+  BiInv_isequiv_biinv -> BiInv_BiInv [] ;
+subgraph cluster_BiInv { label="BiInv"; fillcolor="#FFFFC3"; labeljust=l; style=filled 
+BiInv_BiInv; BiInv_isequiv_biinv; BiInv_isprop_biinv; BiInv_equiv_biinv_isequiv; };
+} /* END */

@@ -1,0 +1,591 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="coqdoc.css" type="text/css" rel="stylesheet">
+<link href="proviola.css" type="text/css" rel="stylesheet">
+<script type="text/javascript">
+        var responses = new Array();
+
+        function mouseover(id, scene) {
+          set_response(get_response(id), scene);
+        };
+
+        function mouseout(scene) {
+          set_response("", scene);
+        };
+
+        function set_array() {
+          
+
+            i = 0;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 1;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 2;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 3;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 4;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 5;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 6;
+            data = "<infomsg>[Loading ML file ltac_plugin.cmxs ... done]</infomsg>	<infomsg>[Loading ML file number_string_notation_plugin.cmxs ... done]	</infomsg>	";
+            responses[i]=data;
+          
+
+            i = 7;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 8;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 9;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 10;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 11;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 12;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 13;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 14;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 15;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 16;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 17;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 18;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 19;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 20;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 21;
+            data = "1 goal (ID 166)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  ============================	  IsExact (Tr (-1)) (functor_ab_biprod i j) (functor_ab_biprod p q)	";
+            responses[i]=data;
+          
+
+            i = 22;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 23;
+            data = "2 goals (ID 236)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  ============================	  IsComplex (functor_ab_biprod i j) (functor_ab_biprod p q)		goal 2 (ID 238) is:	 IsConnMap (Tr (-1)) (cxfib ?cx_isexact)	";
+            responses[i]=data;
+          
+
+            i = 24;
+            data = "1 goal (ID 236)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  ============================	  IsComplex (functor_ab_biprod i j) (functor_ab_biprod p q)	2 goals (ID 260)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  ============================	  functor_ab_biprod p q o* functor_ab_biprod i j == pconst		goal 2 (ID 262) is:	 ?p (point (ab_biprod A X)) =	 dpoint_eq (functor_ab_biprod p q o* functor_ab_biprod i j) @	 (dpoint_eq pconst)^	";
+            responses[i]=data;
+          
+
+            i = 25;
+            data = "1 goal (ID 260)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  ============================	  functor_ab_biprod p q o* functor_ab_biprod i j == pconst	2 goals (ID 275)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  x : ab_biprod A X	  ============================	  p (i (fst x)) = mon_unit		goal 2 (ID 276) is:	 q (j (snd x)) = mon_unit	";
+            responses[i]=data;
+          
+
+            i = 26;
+            data = "1 goal (ID 275)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  x : ab_biprod A X	  ============================	  p (i (fst x)) = mon_unit	<infomsg>	This subproof is complete, but there are some unfocused goals.	Focus next goal with bullet *.	</infomsg>	3 goals		goal 1 (ID 276) is:	 q (j (snd x)) = mon_unit	goal 2 (ID 262) is:	 ((fun x : ab_biprod A X =>	   path_prod ((functor_ab_biprod p q o* functor_ab_biprod i j) x) 	     (pconst x)	     ((let X0 := cx_isexact in let X1 := pointed_fun X0 in X1 (fst x))	      :	      fst ((functor_ab_biprod p q o* functor_ab_biprod i j) x) =	      fst (pconst x))	     (?Goal	      :	      snd ((functor_ab_biprod p q o* functor_ab_biprod i j) x) =	      snd (pconst x)))	  :	  functor_ab_biprod p q o* functor_ab_biprod i j == pconst)	   (point (ab_biprod A X)) =	 dpoint_eq (functor_ab_biprod p q o* functor_ab_biprod i j) @	 (dpoint_eq pconst)^	goal 3 (ID 238) is:	 IsConnMap (Tr (-1))	   (cxfib	      (Build_pHomotopy	         ((fun x : ab_biprod A X =>	           path_prod ((functor_ab_biprod p q o* functor_ab_biprod i j) x)	             (pconst x)	             ((let X0 := cx_isexact in let X1 := pointed_fun X0 in X1 (fst x))	              :	              fst ((functor_ab_biprod p q o* functor_ab_biprod i j) x) =	              fst (pconst x))	             (?Goal	              :	              snd ((functor_ab_biprod p q o* functor_ab_biprod i j) x) =	              snd (pconst x)))	          :	          functor_ab_biprod p q o* functor_ab_biprod i j == pconst) 	         ?q))	";
+            responses[i]=data;
+          
+
+            i = 27;
+            data = "1 goal (ID 276)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  x : ab_biprod A X	  ============================	  q (j (snd x)) = mon_unit	<infomsg>	This subproof is complete, but there are some unfocused goals.	Focus next goal with bullet +.	</infomsg>	2 goals		goal 1 (ID 262) is:	 ((fun x : ab_biprod A X =>	   path_prod ((functor_ab_biprod p q o* functor_ab_biprod i j) x) 	     (pconst x)	     ((let X0 := cx_isexact in let X1 := pointed_fun X0 in X1 (fst x))	      :	      fst ((functor_ab_biprod p q o* functor_ab_biprod i j) x) =	      fst (pconst x))	     ((let X0 := cx_isexact in let X1 := pointed_fun X0 in X1 (snd x))	      :	      snd ((functor_ab_biprod p q o* functor_ab_biprod i j) x) =	      snd (pconst x)))	  :	  functor_ab_biprod p q o* functor_ab_biprod i j == pconst)	   (point (ab_biprod A X)) =	 dpoint_eq (functor_ab_biprod p q o* functor_ab_biprod i j) @	 (dpoint_eq pconst)^	goal 2 (ID 238) is:	 IsConnMap (Tr (-1))	   (cxfib	      (Build_pHomotopy	         ((fun x : ab_biprod A X =>	           path_prod ((functor_ab_biprod p q o* functor_ab_biprod i j) x)	             (pconst x)	             ((let X0 := cx_isexact in let X1 := pointed_fun X0 in X1 (fst x))	              :	              fst ((functor_ab_biprod p q o* functor_ab_biprod i j) x) =	              fst (pconst x))	             ((let X0 := cx_isexact in let X1 := pointed_fun X0 in X1 (snd x))	              :	              snd ((functor_ab_biprod p q o* functor_ab_biprod i j) x) =	              snd (pconst x)))	          :	          functor_ab_biprod p q o* functor_ab_biprod i j == pconst) 	         ?q))	";
+            responses[i]=data;
+          
+
+            i = 28;
+            data = "1 goal (ID 262)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  ============================	  ((fun x : ab_biprod A X =>	    path_prod ((functor_ab_biprod p q o* functor_ab_biprod i j) x) 	      (pconst x)	      ((let X0 := cx_isexact in let X1 := pointed_fun X0 in X1 (fst x))	       :	       fst ((functor_ab_biprod p q o* functor_ab_biprod i j) x) =	       fst (pconst x))	      ((let X0 := cx_isexact in let X1 := pointed_fun X0 in X1 (snd x))	       :	       snd ((functor_ab_biprod p q o* functor_ab_biprod i j) x) =	       snd (pconst x)))	   :	   functor_ab_biprod p q o* functor_ab_biprod i j == pconst)	    (point (ab_biprod A X)) =	  dpoint_eq (functor_ab_biprod p q o* functor_ab_biprod i j) @	  (dpoint_eq pconst)^	<infomsg>	This subproof is complete, but there are some unfocused goals.	Focus next goal with bullet -.	</infomsg>	1 goal		goal 1 (ID 238) is:	 IsConnMap (Tr (-1))	   (cxfib	      (Build_pHomotopy	         ((fun x : ab_biprod A X =>	           path_prod ((functor_ab_biprod p q o* functor_ab_biprod i j) x)	             (pconst x)	             ((let X0 := cx_isexact in let X1 := pointed_fun X0 in X1 (fst x))	              :	              fst ((functor_ab_biprod p q o* functor_ab_biprod i j) x) =	              fst (pconst x))	             ((let X0 := cx_isexact in let X1 := pointed_fun X0 in X1 (snd x))	              :	              snd ((functor_ab_biprod p q o* functor_ab_biprod i j) x) =	              snd (pconst x)))	          :	          functor_ab_biprod p q o* functor_ab_biprod i j == pconst)	         (path_ishprop	            (path_prod	               ((functor_ab_biprod p q o* functor_ab_biprod i j)	                  (point (ab_biprod A X))) (pconst (point (ab_biprod A X)))	               (let X0 := cx_isexact in	                let X1 := pointed_fun X0 in X1 (fst (point (ab_biprod A X))))	               (let X0 := cx_isexact in	                let X1 := pointed_fun X0 in X1 (snd (point (ab_biprod A X)))))	            (dpoint_eq (functor_ab_biprod p q o* functor_ab_biprod i j) @	             (dpoint_eq pconst)^))))	";
+            responses[i]=data;
+          
+
+            i = 29;
+            data = "1 goal (ID 238)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  ============================	  IsConnMap (Tr (-1))	    (cxfib	       (Build_pHomotopy	          ((fun x : ab_biprod A X =>	            path_prod ((functor_ab_biprod p q o* functor_ab_biprod i j) x)	              (pconst x)	              ((let X0 := cx_isexact in	                let X1 := pointed_fun X0 in X1 (fst x))	               :	               fst ((functor_ab_biprod p q o* functor_ab_biprod i j) x) =	               fst (pconst x))	              ((let X0 := cx_isexact in	                let X1 := pointed_fun X0 in X1 (snd x))	               :	               snd ((functor_ab_biprod p q o* functor_ab_biprod i j) x) =	               snd (pconst x)))	           :	           functor_ab_biprod p q o* functor_ab_biprod i j == pconst)	          (path_ishprop	             (path_prod	                ((functor_ab_biprod p q o* functor_ab_biprod i j)	                   (point (ab_biprod A X))) (pconst (point (ab_biprod A X)))	                (let X0 := cx_isexact in	                 let X1 := pointed_fun X0 in X1 (fst (point (ab_biprod A X))))	                (let X0 := cx_isexact in	                 let X1 := pointed_fun X0 in X1 (snd (point (ab_biprod A X)))))	             (dpoint_eq (functor_ab_biprod p q o* functor_ab_biprod i j) @	              (dpoint_eq pconst)^))))	1 goal (ID 455)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  ef : ab_biprod E F	  u : functor_ab_biprod p q ef = point (ab_biprod B Y)	  ============================	  IsConnected (Tr (-1))	    (hfiber	       (fun x : A * X =>	        ((i (fst x), j (snd x));	        path_prod (p (i (fst x)), q (j (snd x))) (mon_unit, mon_unit)	          (cx_isexact (fst x)) (cx_isexact (snd x)))) 	       (ef; u))	";
+            responses[i]=data;
+          
+
+            i = 30;
+            data = "1 goal (ID 517)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  ef : ab_biprod E F	  u : functor_ab_biprod p q ef = point (ab_biprod B Y)	  ============================	  Tr (-1)	    (hfiber	       (fun x : A * X =>	        ((i (fst x), j (snd x));	        path_prod (p (i (fst x)), q (j (snd x))) (mon_unit, mon_unit)	          (cx_isexact (fst x)) (cx_isexact (snd x)))) 	       (ef; u))	";
+            responses[i]=data;
+          
+
+            i = 31;
+            data = "1 goal (ID 525)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  e : E	  f : F	  u : functor_ab_biprod p q (e, f) = point (ab_biprod B Y)	  ============================	  Tr (-1)	    (hfiber	       (fun x : A * X =>	        ((i (fst x), j (snd x));	        path_prod (p (i (fst x)), q (j (snd x))) (mon_unit, mon_unit)	          (cx_isexact (fst x)) (cx_isexact (snd x)))) 	       ((e, f); u))	";
+            responses[i]=data;
+          
+
+            i = 32;
+            data = "1 goal (ID 541)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  e : E	  f : F	  u : functor_ab_biprod p q (e, f) = point (ab_biprod B Y)	  U := (ap fst u, ap snd u) : (p e = mon_unit) * (q f = mon_unit)	  ============================	  Tr (-1)	    (hfiber	       (fun x : A * X =>	        ((i (fst x), j (snd x));	        path_prod (p (i (fst x)), q (j (snd x))) (mon_unit, mon_unit)	          (cx_isexact (fst x)) (cx_isexact (snd x)))) 	       ((e, f); u))	";
+            responses[i]=data;
+          
+
+            i = 33;
+            data = "1 goal (ID 551)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  e : E	  f : F	  u : functor_ab_biprod p q (e, f) = point (ab_biprod B Y)	  U := (ap fst u, ap snd u) : (p e = mon_unit) * (q f = mon_unit)	  a : Tr (-1) (hfiber i e)	  ============================	  Tr (-1)	    (hfiber	       (fun x : A * X =>	        ((i (fst x), j (snd x));	        path_prod (p (i (fst x)), q (j (snd x))) (mon_unit, mon_unit)	          (cx_isexact (fst x)) (cx_isexact (snd x)))) 	       ((e, f); u))	";
+            responses[i]=data;
+          
+
+            i = 34;
+            data = "1 goal (ID 561)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  e : E	  f : F	  u : functor_ab_biprod p q (e, f) = point (ab_biprod B Y)	  U := (ap fst u, ap snd u) : (p e = mon_unit) * (q f = mon_unit)	  a : Tr (-1) (hfiber i e)	  x : Tr (-1) (hfiber j f)	  ============================	  Tr (-1)	    (hfiber	       (fun x0 : A * X =>	        ((i (fst x0), j (snd x0));	        path_prod (p (i (fst x0)), q (j (snd x0))) 	          (mon_unit, mon_unit) (cx_isexact (fst x0)) 	          (cx_isexact (snd x0)))) ((e, f); u))	";
+            responses[i]=data;
+          
+
+            i = 35;
+            data = "1 goal (ID 719)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  e : E	  f : F	  u : functor_ab_biprod p q (e, f) = point (ab_biprod B Y)	  U := (ap fst u, ap snd u) : (p e = mon_unit) * (q f = mon_unit)	  x : hfiber j f	  a : hfiber i e	  ============================	  hfiber	    (fun x0 : A * X =>	     ((i (fst x0), j (snd x0));	     path_prod (p (i (fst x0)), q (j (snd x0))) (mon_unit, mon_unit)	       (cx_isexact (fst x0)) (cx_isexact (snd x0)))) 	    ((e, f); u)	";
+            responses[i]=data;
+          
+
+            i = 36;
+            data = "1 goal (ID 736)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  e : E	  f : F	  u : functor_ab_biprod p q (e, f) = point (ab_biprod B Y)	  U := (ap fst u, ap snd u) : (p e = mon_unit) * (q f = mon_unit)	  x : hfiber j f	  a : hfiber i e	  ============================	  ((i (a.1 + mon_unit), j (mon_unit + x.1));	  path_prod (p (i (a.1 + mon_unit)), q (j (mon_unit + x.1)))	    (mon_unit, mon_unit) (cx_isexact (a.1 + mon_unit))	    (cx_isexact (mon_unit + x.1))) = ((e, f); u)	";
+            responses[i]=data;
+          
+
+            i = 37;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 38;
+            data = "1 goal (ID 1218)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  e : E	  f : F	  u : functor_ab_biprod p q (e, f) = point (ab_biprod B Y)	  U := (ap fst u, ap snd u) : (p e = mon_unit) * (q f = mon_unit)	  x : hfiber j f	  a : hfiber i e	  ============================	  (i (a.1 + mon_unit), j (mon_unit + x.1)) = (e, f)	2 goals (ID 1223)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  e : E	  f : F	  u : functor_ab_biprod p q (e, f) = point (ab_biprod B Y)	  U := (ap fst u, ap snd u) : (p e = mon_unit) * (q f = mon_unit)	  x : hfiber j f	  a : hfiber i e	  ============================	  i (a.1 + mon_unit) = e		goal 2 (ID 1224) is:	 j (mon_unit + x.1) = f	";
+            responses[i]=data;
+          
+
+            i = 39;
+            data = "1 goal (ID 1223)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  e : E	  f : F	  u : functor_ab_biprod p q (e, f) = point (ab_biprod B Y)	  U := (ap fst u, ap snd u) : (p e = mon_unit) * (q f = mon_unit)	  x : hfiber j f	  a : hfiber i e	  ============================	  i (a.1 + mon_unit) = e	1 goal (ID 1287)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  e : E	  f : F	  u : functor_ab_biprod p q (e, f) = point (ab_biprod B Y)	  U := (ap fst u, ap snd u) : (p e = mon_unit) * (q f = mon_unit)	  x : hfiber j f	  a : hfiber i e	  ============================	  i a.1 = e	";
+            responses[i]=data;
+          
+
+            i = 40;
+            data = "<infomsg>	This subproof is complete, but there are some unfocused goals.	Focus next goal with bullet +.	</infomsg>	1 goal		goal 1 (ID 1224) is:	 j (mon_unit + x.1) = f	";
+            responses[i]=data;
+          
+
+            i = 41;
+            data = "1 goal (ID 1224)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  e : E	  f : F	  u : functor_ab_biprod p q (e, f) = point (ab_biprod B Y)	  U := (ap fst u, ap snd u) : (p e = mon_unit) * (q f = mon_unit)	  x : hfiber j f	  a : hfiber i e	  ============================	  j (mon_unit + x.1) = f	1 goal (ID 1357)	  	  A, E, B, X, F, Y : AbGroup	  i : A $-> E	  p : E $-> B	  ex0 : IsExact (Tr (-1)) i p	  j : X $-> F	  q : F $-> Y	  ex1 : IsExact (Tr (-1)) j q	  e : E	  f : F	  u : functor_ab_biprod p q (e, f) = point (ab_biprod B Y)	  U := (ap fst u, ap snd u) : (p e = mon_unit) * (q f = mon_unit)	  x : hfiber j f	  a : hfiber i e	  ============================	  j x.1 = f	";
+            responses[i]=data;
+          
+
+            i = 42;
+            data = "No more goals.	";
+            responses[i]=data;
+          
+
+            i = 43;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 44;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 45;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 46;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 47;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 48;
+            data = "<infomsg>abses_direct_sum is defined</infomsg>	";
+            responses[i]=data;
+          
+
+            i = 49;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 50;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 51;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 52;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 53;
+            data = "<infomsg>abses_baer_sum is defined</infomsg>	";
+            responses[i]=data;
+          
+
+            i = 54;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 55;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 56;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 57;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 58;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 59;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 60;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 61;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 62;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 63;
+            data = "";
+            responses[i]=data;
+          
+
+            i = 64;
+            data = "";
+            responses[i]=data;
+          
+        };
+        
+        function get_response(id) {
+          return responses[id];
+        };
+
+        function set_response(response, scene) {
+          goalId = "goal"+scene;
+          elById = document.getElementById(goalId);
+          if(elById){ 
+            goalSpan = elById.getElementsByTagName("span")[0];
+            goalSpan.innerHTML = response.replace(/	/g , '\n');
+          }
+        };
+      </script>
+</head>
+<body onload="set_array()"><div id="page" scenenumber="0" class="doc">
+<div id="header" scenenumber="1" class="doc">
+</div>
+<div id="main" scenenumber="3" class="doc">
+<h1 class="libtitle">Library HoTT.Algebra.AbGroups.AbSES.BaerSum</h1>
+<div scenenumber="3" class="code">
+<span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(6, '0_3_3');
+      ">
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="HoTT.Basics.html#"><span class="id" title="library">Basics</span></a> <a class="idref" href="HoTT.Types.html#"><span class="id" title="library">Types</span></a> <a class="idref" href="HoTT.Pointed.html#"><span class="id" title="library">Pointed</span></a>.</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(7, '0_3_3');
+      "><br>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="HoTT.WildCat.html#"><span class="id" title="library">WildCat</span></a> <a class="idref" href="HoTT.Homotopy.ExactSequence.html#"><span class="id" title="library">Homotopy.ExactSequence</span></a>.</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(8, '0_3_3');
+      "><br>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#"><span class="id" title="library">AbGroups.AbelianGroup</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.Core.html#"><span class="id" title="library">AbSES.Core</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.Pullback.html#"><span class="id" title="library">AbSES.Pullback</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.Pushout.html#"><span class="id" title="library">AbSES.Pushout</span></a>.</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(9, '0_3_3');
+      "><br>
+<br>
+<span class="id" title="keyword">Local Open</span> <span class="id" title="keyword">Scope</span> <span class="id" title="var">pointed_scope</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(10, '0_3_3');
+      "><br>
+<span class="id" title="keyword">Local Open</span> <span class="id" title="keyword">Scope</span> <span class="id" title="var">type_scope</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(11, '0_3_3');
+      "><br>
+<span class="id" title="keyword">Local Open</span> <span class="id" title="keyword">Scope</span> <span class="id" title="var">mc_add_scope</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_3');
+      " onmouseover="
+      mouseover(12, '0_3_3');
+      "><br>
+<br>
+</span>
+</div>
+<div class="goal" id="goal0_3_3"><pre><span></span></pre></div>
+<div class="doc" scenenumber="5">
+<a id="lab3"></a><h2 class="section">The Baer sum of short exact sequences</h2>
+<div class="doc" scenenumber="4"> </div>
+
+ Biproducts preserve exactness. 
+</div>
+<div scenenumber="7" class="code">
+<span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(21, '0_3_7');
+      ">
+<span class="id" title="keyword">Lemma</span> <a id="ab_biprod_exact" class="idref" href="#ab_biprod_exact"><span class="id" title="lemma">ab_biprod_exact</span></a> {<a id="A:1" class="idref" href="#A:1"><span class="id" title="binder">A</span></a> <a id="E:2" class="idref" href="#E:2"><span class="id" title="binder">E</span></a> <a id="B:3" class="idref" href="#B:3"><span class="id" title="binder">B</span></a> <a id="X:4" class="idref" href="#X:4"><span class="id" title="binder">X</span></a> <a id="F:5" class="idref" href="#F:5"><span class="id" title="binder">F</span></a> <a id="Y:6" class="idref" href="#Y:6"><span class="id" title="binder">Y</span></a> : <a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#AbGroup"><span class="id" title="record">AbGroup</span></a>}<br>
+      (<a id="i:7" class="idref" href="#i:7"><span class="id" title="binder">i</span></a> : <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#A:1"><span class="id" title="variable">A</span></a> <a class="idref" href="HoTT.WildCat.Core.html#c02781df22df625c7b63399d41d90de5"><span class="id" title="notation">$-&gt;</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#E:2"><span class="id" title="variable">E</span></a>) (<a id="p:8" class="idref" href="#p:8"><span class="id" title="binder">p</span></a> : <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#E:2"><span class="id" title="variable">E</span></a> <a class="idref" href="HoTT.WildCat.Core.html#c02781df22df625c7b63399d41d90de5"><span class="id" title="notation">$-&gt;</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#B:3"><span class="id" title="variable">B</span></a>) `{<a id="ex0:9" class="idref" href="#ex0:9"><span class="id" title="binder">ex0</span></a> : <a class="idref" href="HoTT.Homotopy.ExactSequence.html#IsExact"><span class="id" title="class">IsExact</span></a> (<a class="idref" href="HoTT.Truncations.Core.html#Tr"><span class="id" title="definition">Tr</span></a> (-1)) <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#i:7"><span class="id" title="variable">i</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#p:8"><span class="id" title="variable">p</span></a>}<br>
+      (<a id="j:10" class="idref" href="#j:10"><span class="id" title="binder">j</span></a> : <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#X:4"><span class="id" title="variable">X</span></a> <a class="idref" href="HoTT.WildCat.Core.html#c02781df22df625c7b63399d41d90de5"><span class="id" title="notation">$-&gt;</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#F:5"><span class="id" title="variable">F</span></a>) (<a id="q:11" class="idref" href="#q:11"><span class="id" title="binder">q</span></a> : <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#F:5"><span class="id" title="variable">F</span></a> <a class="idref" href="HoTT.WildCat.Core.html#c02781df22df625c7b63399d41d90de5"><span class="id" title="notation">$-&gt;</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#Y:6"><span class="id" title="variable">Y</span></a>) `{<a id="ex1:12" class="idref" href="#ex1:12"><span class="id" title="binder">ex1</span></a> : <a class="idref" href="HoTT.Homotopy.ExactSequence.html#IsExact"><span class="id" title="class">IsExact</span></a> (<a class="idref" href="HoTT.Truncations.Core.html#Tr"><span class="id" title="definition">Tr</span></a> (-1)) <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#j:10"><span class="id" title="variable">j</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#q:11"><span class="id" title="variable">q</span></a>}<br>
+  : <a class="idref" href="HoTT.Homotopy.ExactSequence.html#IsExact"><span class="id" title="class">IsExact</span></a> (<a class="idref" href="HoTT.Truncations.Core.html#Tr"><span class="id" title="definition">Tr</span></a> (-1)) (<a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#functor_ab_biprod"><span class="id" title="definition">functor_ab_biprod</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#i:7"><span class="id" title="variable">i</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#j:10"><span class="id" title="variable">j</span></a>)<br>
+            (<a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#functor_ab_biprod"><span class="id" title="definition">functor_ab_biprod</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#p:8"><span class="id" title="variable">p</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#q:11"><span class="id" title="variable">q</span></a>).</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(22, '0_3_7');
+      "><br>
+<span class="id" title="keyword">Proof</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(23, '0_3_7');
+      "><br>
+  <span class="id" title="var">snrapply</span> <a class="idref" href="HoTT.Homotopy.ExactSequence.html#Build_IsExact"><span class="id" title="constructor">Build_IsExact</span></a>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(24, '0_3_7');
+      "><br>
+  - <span class="id" title="var">snrapply</span> <a class="idref" href="HoTT.Pointed.Core.html#Build_pHomotopy"><span class="id" title="definition">Build_pHomotopy</span></a>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(25, '0_3_7');
+      "><br>
+    + <span class="id" title="tactic">intro</span> <span class="id" title="var">x</span>; <span class="id" title="tactic">apply</span> <a class="idref" href="HoTT.Types.Prod.html#path_prod"><span class="id" title="definition">path_prod</span></a>; <span class="id" title="var">cbn</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(26, '0_3_7');
+      "><br>
+      × <span class="id" title="tactic">apply</span> <span class="id" title="var">ex0</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(27, '0_3_7');
+      "><br>
+      × <span class="id" title="tactic">apply</span> <span class="id" title="var">ex1</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(28, '0_3_7');
+      "><br>
+    + <span class="id" title="tactic">apply</span> <a class="idref" href="HoTT.Basics.Trunc.html#path_ishprop"><span class="id" title="lemma">path_ishprop</span></a>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(29, '0_3_7');
+      "><br>
+  - <span class="id" title="tactic">intros</span> [<span class="id" title="var">ef</span> <span class="id" title="var">u</span>]; <span class="id" title="var">cbn</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(30, '0_3_7');
+      "><br>
+    <span class="id" title="var">rapply</span> <a class="idref" href="HoTT.Basics.Trunc.html#contr_inhabited_hprop"><span class="id" title="lemma">contr_inhabited_hprop</span></a>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(31, '0_3_7');
+      "><br>
+    <span class="id" title="tactic">destruct</span> <span class="id" title="var">ef</span> <span class="id" title="keyword">as</span> [<span class="id" title="var">e</span> <span class="id" title="var">f</span>].</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(32, '0_3_7');
+      "><br>
+    <span class="id" title="tactic">pose</span> (<span class="id" title="var">U</span> := <a class="idref" href="HoTT.Basics.Overture.html#f3f2d22838b594a6e5dbfb541ecf90ae"><span class="id" title="notation">(</span></a><a class="idref" href="HoTT.Types.Prod.html#equiv_path_prod"><span class="id" title="definition">equiv_path_prod</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span><a class="idref" href="HoTT.Basics.Overture.html#f3f2d22838b594a6e5dbfb541ecf90ae"><span class="id" title="notation">)^-1</span></a> <a class="idref" href="HoTT.Basics.Overture.html#f3f2d22838b594a6e5dbfb541ecf90ae"><span class="id" title="notation">u</span></a>); <span class="id" title="var">cbn</span> <span class="id" title="tactic">in</span> <span class="id" title="var">U</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(33, '0_3_7');
+      "><br>
+    <span class="id" title="tactic">pose</span> <span class="id" title="var">proof</span> (<span class="id" title="var">a</span> := <a class="idref" href="HoTT.Homotopy.ExactSequence.html#isexact_preimage"><span class="id" title="lemma">isexact_preimage</span></a> <span class="id" title="var">_</span> <span class="id" title="var">i</span> <span class="id" title="var">p</span> <span class="id" title="var">e</span> (<a class="idref" href="HoTT.Basics.Datatypes.html#fst"><span class="id" title="projection">fst</span></a> <span class="id" title="var">U</span>)).</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(34, '0_3_7');
+      "><br>
+    <span class="id" title="tactic">pose</span> <span class="id" title="var">proof</span> (<span class="id" title="var">x</span> := <a class="idref" href="HoTT.Homotopy.ExactSequence.html#isexact_preimage"><span class="id" title="lemma">isexact_preimage</span></a> <span class="id" title="var">_</span> <span class="id" title="var">j</span> <span class="id" title="var">q</span> <span class="id" title="var">f</span> (<a class="idref" href="HoTT.Basics.Datatypes.html#snd"><span class="id" title="projection">snd</span></a> <span class="id" title="var">U</span>)).</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(35, '0_3_7');
+      "><br>
+    <span class="id" title="var">strip_truncations</span>; <span class="id" title="tactic">apply</span> <a class="idref" href="HoTT.Truncations.Core.html#Trunc.tr"><span class="id" title="constructor">tr</span></a>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(36, '0_3_7');
+      "><br>
+    <span class="id" title="tactic">∃</span> (<a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#ab_biprod_inl"><span class="id" title="definition">ab_biprod_inl</span></a> <span class="id" title="var">a</span><a class="idref" href="HoTT.Basics.Overture.html#::fibration_scope:x_'.1'"><span class="id" title="notation">.1</span></a> <a class="idref" href="HoTT.Classes.interfaces.canonical_names.html#903023549b997efe3766fb719fc396b5"><span class="id" title="notation">+</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#ab_biprod_inr"><span class="id" title="definition">ab_biprod_inr</span></a> <span class="id" title="var">x</span><a class="idref" href="HoTT.Basics.Overture.html#::fibration_scope:x_'.1'"><span class="id" title="notation">.1</span></a>); <span class="id" title="var">cbn</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(37, '0_3_7');
+      "><br>
+    <span class="id" title="tactic">apply</span> <a class="idref" href="HoTT.Types.Sigma.html#path_sigma_hprop"><span class="id" title="definition">path_sigma_hprop</span></a>; <span class="id" title="var">cbn</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(38, '0_3_7');
+      "><br>
+    <span class="id" title="tactic">apply</span> <a class="idref" href="HoTT.Types.Prod.html#path_prod"><span class="id" title="definition">path_prod</span></a>; <span class="id" title="var">cbn</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(39, '0_3_7');
+      "><br>
+    + <span class="id" title="tactic">rewrite</span> <a class="idref" href="HoTT.Classes.interfaces.canonical_names.html#right_identity"><span class="id" title="definition">right_identity</span></a>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(40, '0_3_7');
+      "><br>
+      <span class="id" title="tactic">exact</span> <span class="id" title="var">a</span><a class="idref" href="HoTT.Basics.Overture.html#::fibration_scope:x_'.2'"><span class="id" title="notation">.2</span></a>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(41, '0_3_7');
+      "><br>
+    + <span class="id" title="tactic">rewrite</span> <a class="idref" href="HoTT.Classes.interfaces.canonical_names.html#left_identity"><span class="id" title="definition">left_identity</span></a>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(42, '0_3_7');
+      "><br>
+      <span class="id" title="tactic">exact</span> <span class="id" title="var">x</span><a class="idref" href="HoTT.Basics.Overture.html#::fibration_scope:x_'.2'"><span class="id" title="notation">.2</span></a>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(43, '0_3_7');
+      "><br>
+<span class="id" title="keyword">Defined</span>.</span><span class="command" onmouseout="
+      mouseout('0_3_7');
+      " onmouseover="
+      mouseover(44, '0_3_7');
+      "><br>
+<br>
+</span>
+</div>
+<div class="goal" id="goal0_3_7"><pre><span></span></pre></div>
+<div class="doc" scenenumber="9">
+The pointwise direct sum of two short exact sequences. 
+</div>
+<div scenenumber="11" class="code">
+<span class="command" onmouseout="
+      mouseout('0_3_11');
+      " onmouseover="
+      mouseover(48, '0_3_11');
+      ">
+<span class="id" title="keyword">Definition</span> <a id="abses_direct_sum" class="idref" href="#abses_direct_sum"><span class="id" title="definition">abses_direct_sum</span></a> `{<a id="H:13" class="idref" href="#H:13"><span class="id" title="binder">Univalence</span></a>} {<a id="B:14" class="idref" href="#B:14"><span class="id" title="binder">B</span></a> <a id="A:15" class="idref" href="#A:15"><span class="id" title="binder">A</span></a> : <a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#AbGroup"><span class="id" title="record">AbGroup</span></a>} (<a id="E:16" class="idref" href="#E:16"><span class="id" title="binder">E</span></a> <a id="F:17" class="idref" href="#F:17"><span class="id" title="binder">F</span></a> : <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.Core.html#AbSES"><span class="id" title="definition">AbSES</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#B:14"><span class="id" title="variable">B</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#A:15"><span class="id" title="variable">A</span></a>)<br>
+  : <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.Core.html#AbSES"><span class="id" title="definition">AbSES</span></a> (<a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#ab_biprod"><span class="id" title="definition">ab_biprod</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#B:14"><span class="id" title="variable">B</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#B:14"><span class="id" title="variable">B</span></a>) (<a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#ab_biprod"><span class="id" title="definition">ab_biprod</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#A:15"><span class="id" title="variable">A</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#A:15"><span class="id" title="variable">A</span></a>)<br>
+  := <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.Core.html#Build_AbSES"><span class="id" title="definition">Build_AbSES</span></a> (<a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#ab_biprod"><span class="id" title="definition">ab_biprod</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#E:16"><span class="id" title="variable">E</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#F:17"><span class="id" title="variable">F</span></a>)<br>
+                 (<a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#functor_ab_biprod"><span class="id" title="definition">functor_ab_biprod</span></a> (<a class="idref" href="HoTT.Algebra.AbGroups.AbSES.Core.html#inclusion"><span class="id" title="projection">inclusion</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#E:16"><span class="id" title="variable">E</span></a>) (<a class="idref" href="HoTT.Algebra.AbGroups.AbSES.Core.html#inclusion"><span class="id" title="projection">inclusion</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#F:17"><span class="id" title="variable">F</span></a>))<br>
+                 (<a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#functor_ab_biprod"><span class="id" title="definition">functor_ab_biprod</span></a> (<a class="idref" href="HoTT.Algebra.AbGroups.AbSES.Core.html#projection"><span class="id" title="projection">projection</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#E:16"><span class="id" title="variable">E</span></a>) (<a class="idref" href="HoTT.Algebra.AbGroups.AbSES.Core.html#projection"><span class="id" title="projection">projection</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#F:17"><span class="id" title="variable">F</span></a>))<br>
+                 (<a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#functor_ab_biprod_embedding"><span class="id" title="definition">functor_ab_biprod_embedding</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>)<br>
+                 (<a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#functor_ab_biprod_sujection"><span class="id" title="definition">functor_ab_biprod_sujection</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span>)<br>
+                 (<a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#ab_biprod_exact"><span class="id" title="lemma">ab_biprod_exact</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span>).</span><span class="command" onmouseout="
+      mouseout('0_3_11');
+      " onmouseover="
+      mouseover(49, '0_3_11');
+      "><br>
+<br>
+</span>
+</div>
+<div class="goal" id="goal0_3_11"><pre><span></span></pre></div>
+<div class="doc" scenenumber="13">
+The Baer sum of two short exact sequences is obtained from the pointwise direct sum by pushing forth along the codiagonal and then pulling back along the diagonal. (Swapping the order of pushing forth and pulling back produces an isomorphic short exact sequence.) 
+</div>
+<div scenenumber="15" class="code">
+<span class="command" onmouseout="
+      mouseout('0_3_15');
+      " onmouseover="
+      mouseover(53, '0_3_15');
+      ">
+<span class="id" title="keyword">Definition</span> <a id="abses_baer_sum" class="idref" href="#abses_baer_sum"><span class="id" title="definition">abses_baer_sum</span></a> `{<a id="H:18" class="idref" href="#H:18"><span class="id" title="binder">Univalence</span></a>} {<a id="B:19" class="idref" href="#B:19"><span class="id" title="binder">B</span></a> <a id="A:20" class="idref" href="#A:20"><span class="id" title="binder">A</span></a> : <a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#AbGroup"><span class="id" title="record">AbGroup</span></a>} (<a id="E:21" class="idref" href="#E:21"><span class="id" title="binder">E</span></a> <a id="F:22" class="idref" href="#F:22"><span class="id" title="binder">F</span></a> : <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.Core.html#AbSES"><span class="id" title="definition">AbSES</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#B:19"><span class="id" title="variable">B</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#A:20"><span class="id" title="variable">A</span></a>)<br>
+  : <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.Core.html#AbSES"><span class="id" title="definition">AbSES</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#B:19"><span class="id" title="variable">B</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#A:20"><span class="id" title="variable">A</span></a><br>
+  := <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.Pullback.html#abses_pullback"><span class="id" title="definition">abses_pullback</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#ab_diagonal"><span class="id" title="definition">ab_diagonal</span></a> (<a class="idref" href="HoTT.Algebra.AbGroups.AbSES.Pushout.html#abses_pushout"><span class="id" title="definition">abses_pushout</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbelianGroup.html#ab_codiagonal"><span class="id" title="definition">ab_codiagonal</span></a> (<a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#abses_direct_sum"><span class="id" title="definition">abses_direct_sum</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#E:21"><span class="id" title="variable">E</span></a> <a class="idref" href="HoTT.Algebra.AbGroups.AbSES.BaerSum.html#F:22"><span class="id" title="variable">F</span></a>)).</span><span class="command" onmouseout="
+      mouseout('0_3_15');
+      " onmouseover="
+      mouseover(54, '0_3_15');
+      "><br>
+</span>
+</div>
+<div class="goal" id="goal0_3_15"><pre><span></span></pre></div>
+</div>
+<div id="footer" scenenumber="5" class="doc">
+<hr>
+<a href="index.html">Index</a><hr>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+</div>
+</div></body>
+</html>

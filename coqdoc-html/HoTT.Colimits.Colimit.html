@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="coqdoc.css" rel="stylesheet" type="text/css" />
+<title>HoTT.Colimits.Colimit</title>
+</head>
+
+<body>
+
+<div id="page">
+
+<div id="header">
+</div>
+
+<div id="main">
+
+<h1 class="libtitle">Library HoTT.Colimits.Colimit</h1>
+
+<div class="code">
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="HoTT.Basics.html#"><span class="id" title="library">Basics</span></a> <a class="idref" href="HoTT.Types.html#"><span class="id" title="library">Types</span></a>.<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="HoTT.Diagrams.Diagram.html#"><span class="id" title="library">Diagrams.Diagram</span></a>.<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="HoTT.Diagrams.Graph.html#"><span class="id" title="library">Diagrams.Graph</span></a>.<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="HoTT.Diagrams.Cocone.html#"><span class="id" title="library">Diagrams.Cocone</span></a>.<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="HoTT.Diagrams.ConstantDiagram.html#"><span class="id" title="library">Diagrams.ConstantDiagram</span></a>.<br/>
+<span class="id" title="keyword">Require</span> <span class="id" title="keyword">Import</span> <a class="idref" href="HoTT.Colimits.Coeq.html#"><span class="id" title="library">Colimits.Coeq</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">Local Open</span> <span class="id" title="keyword">Scope</span> <span class="id" title="var">path_scope</span>.<br/>
+<span class="id" title="keyword">Generalizable All Variables</span>.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+This file contains the definition of colimits, and functoriality results on colimits. 
+<div class="paragraph"> </div>
+
+<a id="lab804"></a><h1 class="section">Colimits</h1>
+
+<div class="paragraph"> </div>
+
+ A colimit is the extremity of a cocone. 
+</div>
+<div class="code">
+
+<br/>
+<span class="id" title="keyword">Class</span> <a id="IsColimit" class="idref" href="#IsColimit"><span class="id" title="record">IsColimit</span></a> `(<a id="D:2" class="idref" href="#D:2"><span class="id" title="binder">D</span></a>: <a class="idref" href="HoTT.Diagrams.Diagram.html#Diagram"><span class="id" title="record">Diagram</span></a> <a id="G:1" class="idref" href="#G:1"><span class="id" title="binder">G</span></a>) (<a id="Q:3" class="idref" href="#Q:3"><span class="id" title="binder">Q</span></a>: <span class="id" title="keyword">Type</span>) := {<br/>
+&nbsp;&nbsp;<a id="iscolimit_cocone" class="idref" href="#iscolimit_cocone"><span class="id" title="projection">iscolimit_cocone</span></a> : <a class="idref" href="HoTT.Diagrams.Cocone.html#Cocone"><span class="id" title="class">Cocone</span></a> <a class="idref" href="HoTT.Colimits.Colimit.html#D:2"><span class="id" title="variable">D</span></a> <a class="idref" href="HoTT.Colimits.Colimit.html#Q:3"><span class="id" title="variable">Q</span></a>;<br/>
+&nbsp;&nbsp;<a id="iscolimit_unicocone" class="idref" href="#iscolimit_unicocone"><span class="id" title="projection">iscolimit_unicocone</span></a> : <a class="idref" href="HoTT.Diagrams.Cocone.html#UniversalCocone"><span class="id" title="class">UniversalCocone</span></a> <a class="idref" href="HoTT.Colimits.Colimit.html#iscolimit_cocone:5"><span class="id" title="method">iscolimit_cocone</span></a>;<br/>
+}.<br/>
+#[<span class="id" title="var">export</span>] <span class="id" title="var">Existing</span> <span class="id" title="keyword">Instance</span> <span class="id" title="var">iscolimit_cocone</span>.<br/>
+<span class="id" title="keyword">Coercion</span> <a class="idref" href="HoTT.Colimits.Colimit.html#iscolimit_cocone"><span class="id" title="method">iscolimit_cocone</span></a> <a class="idref" href="HoTT.Colimits.Colimit.html#iscolimit_cocone"><span class="id" title="method">:</span></a> <a class="idref" href="HoTT.Colimits.Colimit.html#iscolimit_cocone"><span class="id" title="method">IsColimit</span></a> <a class="idref" href="HoTT.Colimits.Colimit.html#iscolimit_cocone"><span class="id" title="method">&gt;-&gt;</span></a> <a class="idref" href="HoTT.Colimits.Colimit.html#iscolimit_cocone"><span class="id" title="method">Cocone</span></a>.<br/>
+
+<br/>
+<span class="id" title="keyword">Arguments</span> <a class="idref" href="HoTT.Colimits.Colimit.html#Build_IsColimit"><span class="id" title="constructor">Build_IsColimit</span></a> {<span class="id" title="var">G</span> <span class="id" title="var">D</span> <span class="id" title="var">Q</span>} <span class="id" title="var">C</span> <span class="id" title="var">H</span> : <span class="id" title="tactic">rename</span>.<br/>
+<span class="id" title="keyword">Arguments</span> <a class="idref" href="HoTT.Colimits.Colimit.html#iscolimit_cocone"><span class="id" title="method">iscolimit_cocone</span></a> {<span class="id" title="var">G</span> <span class="id" title="var">D</span> <span class="id" title="var">Q</span>} <span class="id" title="var">C</span> : <span class="id" title="tactic">rename</span>.<br/>
+<span class="id" title="keyword">Arguments</span> <a class="idref" href="HoTT.Colimits.Colimit.html#iscolimit_unicocone"><span class="id" title="method">iscolimit_unicocone</span></a> {<span class="id" title="var">G</span> <span class="id" title="var">D</span> <span class="id" title="var">Q</span>} <span class="id" title="var">H</span> : <span class="id" title="tactic">rename</span>.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+<span class="inlinecode"><a class="idref" href="HoTT.Colimits.Colimit.html#cocone_postcompose_inv"><span class="id" title="definition">cocone_postcompose_inv</span></a></span> is defined for convenience: it is only the inverse of <span class="inlinecode"><a class="idref" href="HoTT.Diagrams.Cocone.html#cocone_postcompose"><span class="id" title="definition">cocone_postcompose</span></a></span>. It allows to recover the map <span class="inlinecode"><a class="idref" href="HoTT.Categories.Structure.Core.html#PreCategoryOfStructures.h"><span class="id" title="projection">h</span></a></span> from a cocone <span class="inlinecode"><a class="idref" href="HoTT.Categories.NaturalTransformation.Pointwise.html#pointwise.C'"><span class="id" title="variable">C'</span></a></span>. 
+</div>
+<div class="code">
+
+<br/>
+<span class="id" title="keyword">Definition</span> <a id="cocone_postcompose_inv" class="idref" href="#cocone_postcompose_inv"><span class="id" title="definition">cocone_postcompose_inv</span></a> `{<a id="D:8" class="idref" href="#D:8"><span class="id" title="binder">D</span></a>: <a class="idref" href="HoTT.Diagrams.Diagram.html#Diagram"><span class="id" title="record">Diagram</span></a> <a id="G:7" class="idref" href="#G:7"><span class="id" title="binder">G</span></a>} {<a id="Q:9" class="idref" href="#Q:9"><span class="id" title="binder">Q</span></a> <a id="X:10" class="idref" href="#X:10"><span class="id" title="binder">X</span></a>}<br/>
+&nbsp;&nbsp;(<a id="H:11" class="idref" href="#H:11"><span class="id" title="binder">H</span></a> : <a class="idref" href="HoTT.Colimits.Colimit.html#IsColimit"><span class="id" title="class">IsColimit</span></a> <a class="idref" href="HoTT.Colimits.Colimit.html#D:8"><span class="id" title="variable">D</span></a> <a class="idref" href="HoTT.Colimits.Colimit.html#Q:9"><span class="id" title="variable">Q</span></a>) (<a id="C':12" class="idref" href="#C':12"><span class="id" title="binder">C'</span></a> : <a class="idref" href="HoTT.Diagrams.Cocone.html#Cocone"><span class="id" title="class">Cocone</span></a> <a class="idref" href="HoTT.Colimits.Colimit.html#D:8"><span class="id" title="variable">D</span></a> <a class="idref" href="HoTT.Colimits.Colimit.html#X:10"><span class="id" title="variable">X</span></a>) : <a class="idref" href="HoTT.Colimits.Colimit.html#Q:9"><span class="id" title="variable">Q</span></a> <a class="idref" href="HoTT.Basics.Logic.html#::type_scope:x_'-&gt;'_x"><span class="id" title="notation">→</span></a> <a class="idref" href="HoTT.Colimits.Colimit.html#X:10"><span class="id" title="variable">X</span></a><br/>
+&nbsp;&nbsp;:= @<a class="idref" href="HoTT.Basics.Overture.html#equiv_inv"><span class="id" title="method">equiv_inv</span></a> <span class="id" title="var">_</span> <span class="id" title="var">_</span> <span class="id" title="var">_</span> (<a class="idref" href="HoTT.Colimits.Colimit.html#iscolimit_unicocone"><span class="id" title="method">iscolimit_unicocone</span></a> <a class="idref" href="HoTT.Colimits.Colimit.html#H:11"><span class="id" title="variable">H</span></a> <a class="idref" href="HoTT.Colimits.Colimit.html#X:10"><span class="id" title="variable">X</span></a>) <a class="idref" href="HoTT.Colimits.Colimit.html#C':12"><span class="id" title="variable">C'</span></a>.<br/>
+
+<br/>
+</div>
+
+<div class="doc">
+<a id="lab805"></a><h1 class="section">Existence of colimits</h1>
+
+<div class="paragraph"> </div>
+
+ Whatever the diagram considered, there exists a colimit of it. The existence is given by the HIT <span class="inlinecode"><a class="idref" href="HoTT.Categories.Limits.Functors.html#functors.colimit"><span class="id" title="section">colimit</span></a></span>. 
+<div class="paragraph"> </div>
+
+<a id="lab806"></a><h2 class="section">Definition of the HIT</h2>
+
+
+<div class="paragraph"> </div>
+
+  HIT Colimit {G : Graph} (D : Diagram G) : Type :=
+  | colim : forall i, D i -&gt; Colimit D
+  | colimp : forall i j (f : G i j) (x : D i) : colim j (D <i>f f x) = colim i x
+  .
+
+<div class="paragraph"> </div>
+
+
+<div class="paragraph"> </div>
+
+ A colimit is just the coequializer of the source and target maps of the diagram.  The source type in the coequalizer ought to be:
+&gt;&gt;&gt;
+{x : sig D &amp; {y : sig D &amp; {f : G x.1 y.1 &amp; D <i>f f x.2 = y.2}}}
+<code>&lt;
+</code>However we notice that the path type forms a contractible component, so we can use the more efficient:
+&gt;&gt;&gt;
+{x : sig D &amp; {j : G &amp; G x.1 j}}
+<code>&lt; *)
+</code>Definition Colimit {G : Graph} (D : Diagram G) : Type :=
+  @Coeq
+    {x : sig D &amp; {j : G &amp; G x.1 j}}
+    (sig D)
+    (fun t =&gt; t.1)
+    (fun t =&gt; (t.2.1; D <i>f t.2.2 t.1.2))
+  .
+
+<div class="paragraph"> </div>
+
+Definition colim {G : Graph} {D : Diagram G} (i : G) (x : D i) : Colimit D :=
+  coeq (i ; x).
+
+<div class="paragraph"> </div>
+
+Definition colimp {G : Graph} {D : Diagram G} (i j : G) (f : G i j) (x : D i)
+  : colim j (D <i>f f x) = colim i x
+  := (cglue ((i; x); j; f))^.
+
+<div class="paragraph"> </div>
+
+Definition Colimit_ind {G : Graph} {D : Diagram G} (P : Colimit D -&gt; Type)
+(q : forall i x, P (colim i x))
+(pp_q : forall (i j : G) (g: G i j) (x : D i),
+  (@colimp G D i j g x)  (q j (D _f g x)) = q i x)
+: forall w, P w.
+Proof.
+  srapply Coeq_ind.
+  - intros [x i].
+    exact (q x i).
+  - intros [[i x] [j f]].
+    cbn in f; cbn.
+    apply moveR_transport_p.
+    symmetry.
+    exact (pp_q _ _ _ _).
+Defined.
+
+Definition Colimit_ind_beta_colimp {G : Graph} {D : Diagram G}
+  (P : Colimit D -> Type) (q : forall i x, P (colim i x))
+  (pp_q : forall (i j: G) (g: G i j) (x: D i),
+    @colimp G D i j g x  q _ (D <i>f g x) = q _ x)
+  (i j : G) (g : G i j) (x : D i)
+  : apD (Colimit_ind P q pp_q) (colimp i j g x) = pp_q i j g x.
+Proof.
+  refine (apD_V _ </i> @ _).
+  apply moveR_equiv_M.
+  apply moveR_equiv_M.
+  refine (Coeq_ind_beta_cglue _    @ _).
+  symmetry.
+  apply moveL_transport_p_V.
+Defined.
+
+<div class="paragraph"> </div>
+
+Definition Colimit_rec {G : Graph} {D : Diagram G} (P : Type) (C : Cocone D P)
+  : Colimit D -&gt; P.
+Proof.
+  srapply (Colimit_ind _ C).
+  intros i j g x.
+  refine (transport_const _  @ _).
+  apply legs_comm.
+Defined.
+
+<div class="paragraph"> </div>
+
+Definition Colimit_rec_beta_colimp {G : Graph} {D : Diagram G}
+  (P : Type) (C : Cocone D P) (i j : G) (g: G i j) (x: D i)
+  : ap (Colimit_rec P C) (colimp i j g x) = legs_comm C i j g x.
+Proof.
+  rapply (cancelL (transport_const (colimp i j g x) _)).
+  srapply ((apD_const (Colimit_ind (fun _ =&gt; P) C _) (colimp i j g x))^ @ _).
+  srapply (Colimit_ind_beta_colimp (fun _ =&gt; P) C _ i j g x).
+Defined.
+
+<div class="paragraph"> </div>
+
+Arguments colim : simpl never.
+Arguments colimp : simpl never.
+
+<div class="paragraph"> </div>
+
+
+<div class="paragraph"> </div>
+
+Global Instance isequiv_colimit_rec `{Funext} {G : Graph}
+  {D : Diagram G} (P : Type) : IsEquiv (Colimit_rec (D:=D) P).
+Proof.
+  srapply isequiv_adjointify.
+  { intro f.
+    srapply Build_Cocone.
+    1: intros i g; apply f, (colim i g).
+    intros i j g x.
+    apply ap, colimp. }
+  { intro.
+    apply path_forall.
+    srapply Colimit_ind.
+    1: reflexivity.
+    intros ????; cbn.
+    rewrite transport_paths_FlFr.
+    rewrite Colimit_rec_beta_colimp.
+    hott_simpl. }
+  { intros <font size=-2>&#9744;</font>.
+    srapply path_cocone.
+    1: reflexivity.
+    intros ????; cbn.
+    rewrite Colimit_rec_beta_colimp.
+    hott_simpl. }
+Defined.
+
+<div class="paragraph"> </div>
+
+Definition equiv_colimit_rec `{Funext} {G : Graph} {D : Diagram G} (P : Type)
+  : Cocone D P &lt;~&gt; (Colimit D -&gt; P) := Build_Equiv _   (isequiv_colimit_rec P).
+
+<div class="paragraph"> </div>
+
+
+<div class="paragraph"> </div>
+
+Definition cocone_colimit {G : Graph} (D : Diagram G) : Cocone D (Colimit D)
+  := Build_Cocone colim colimp.
+
+<div class="paragraph"> </div>
+
+Global Instance unicocone_colimit `{Funext} {G : Graph} (D : Diagram G)
+  : UniversalCocone (cocone_colimit D).
+Proof.
+  srapply Build_UniversalCocone; intro Y.
+  srapply (isequiv_adjointify _ (Colimit_rec Y) _ ).
+<ul class="doclist">
+<li> intros C.
+    srapply path_cocone.
+    1: reflexivity.
+    intros i j f x; simpl.
+    refine (concat_p1 _ @ _ @ (concat_1p _)^).
+    apply Colimit_rec_beta_colimp.
+
+</li>
+<li> intro f.
+    apply path_forall.
+    srapply Colimit_ind.
+    1: reflexivity.
+    intros i j g x; simpl.
+    rewrite transport_paths_FlFr.
+    rewrite Colimit_rec_beta_colimp.
+    refine (ap (fun x =&gt; concat x _) (concat_p1 _) @ _).
+    apply concat_Vp.
+
+</li>
+</ul>
+Defined.
+
+<div class="paragraph"> </div>
+
+Global Instance iscolimit_colimit `{Funext} {G : Graph} (D : Diagram G)
+  : IsColimit D (Colimit D) := Build_IsColimit _ (unicocone_colimit D).
+
+<div class="paragraph"> </div>
+
+
+<div class="paragraph"> </div>
+
+Section FunctorialityColimit.
+
+<div class="paragraph"> </div>
+
+  Context `{Funext} {G : Graph}.
+
+<div class="paragraph"> </div>
+
+  
+<div class="paragraph"> </div>
+
+  Definition iscolimit_precompose_equiv {D1 D2 : Diagram G}
+    (m : D1 ~d~ D2) {Q : Type}
+    : IsColimit D2 Q -&gt; IsColimit D1 Q.
+  Proof.
+    intros HQ.
+    srapply (Build_IsColimit (cocone_precompose m HQ) _).
+    apply cocone_precompose_equiv_universality, HQ.
+  Defined.
+
+<div class="paragraph"> </div>
+
+  Definition iscolimit_postcompose_equiv {D: Diagram G} `(f: Q &lt;~&gt; Q')
+    : IsColimit D Q -&gt; IsColimit D Q'.
+  Proof.
+    intros HQ.
+    srapply (Build_IsColimit (cocone_postcompose HQ f) _).
+    apply cocone_postcompose_equiv_universality, HQ.
+  Defined.
+
+<div class="paragraph"> </div>
+
+  
+<div class="paragraph"> </div>
+
+  Definition functor_colimit {D1 D2 : Diagram G} (m : DiagramMap D1 D2)
+    {Q1 Q2} (HQ1 : IsColimit D1 Q1) (HQ2 : IsColimit D2 Q2)
+    : Q1 -&gt; Q2 := cocone_postcompose_inv HQ1 (cocone_precompose m HQ2).
+
+<div class="paragraph"> </div>
+
+  
+<div class="paragraph"> </div>
+
+  Definition functor_colimit_commute {D1 D2 : Diagram G}
+    (m : DiagramMap D1 D2) {Q1 Q2}
+    (HQ1 : IsColimit D1 Q1) (HQ2: IsColimit D2 Q2)
+    : cocone_precompose m HQ2
+      = cocone_postcompose HQ1 (functor_colimit m HQ1 HQ2)
+    := (eisretr (cocone_postcompose HQ1) _)^.
+
+<div class="paragraph"> </div>
+
+  
+<div class="paragraph"> </div>
+
+  
+<div class="paragraph"> </div>
+
+  Context {D1 D2 : Diagram G} (m : D1 ~d~ D2) {Q1 Q2}
+    (HQ1 : IsColimit D1 Q1) (HQ2 : IsColimit D2 Q2).
+
+<div class="paragraph"> </div>
+
+  Definition functor_colimit_eissect
+    : functor_colimit m HQ1 HQ2
+      o functor_colimit (diagram_equiv_inv m) HQ2 HQ1 == idmap.
+  Proof.
+    apply ap10.
+    srapply (equiv_inj (cocone_postcompose HQ2) _).
+    1: apply HQ2.
+    etransitivity.
+    2:symmetry; apply cocone_postcompose_identity.
+    etransitivity.
+    1: apply cocone_postcompose_comp.
+    rewrite eisretr, cocone_precompose_postcompose, eisretr.
+    rewrite cocone_precompose_comp, diagram_inv_is_section.
+    apply cocone_precompose_identity.
+  Defined.
+
+<div class="paragraph"> </div>
+
+  Definition functor_colimit_eisretr
+    : functor_colimit (diagram_equiv_inv m) HQ2 HQ1
+      o functor_colimit m HQ1 HQ2 == idmap.
+  Proof.
+    apply ap10.
+    srapply (equiv_inj (cocone_postcompose HQ1) _).
+    1: apply HQ1.
+    etransitivity.
+    2:symmetry; apply cocone_postcompose_identity.
+    etransitivity.
+    1: apply cocone_postcompose_comp.
+    rewrite eisretr, cocone_precompose_postcompose, eisretr.
+    rewrite cocone_precompose_comp, diagram_inv_is_retraction.
+    apply cocone_precompose_identity.
+  Defined.
+
+<div class="paragraph"> </div>
+
+  Global Instance isequiv_functor_colimit
+    : IsEquiv (functor_colimit m HQ1 HQ2)
+    := isequiv_adjointify _ 
+      functor_colimit_eissect functor_colimit_eisretr.
+
+<div class="paragraph"> </div>
+
+  Definition equiv_functor_colimit : Q1 &lt;~&gt; Q2
+    := Build_Equiv _   isequiv_functor_colimit.
+
+<div class="paragraph"> </div>
+
+End FunctorialityColimit.
+
+<div class="paragraph"> </div>
+
+
+<div class="paragraph"> </div>
+
+
+<div class="paragraph"> </div>
+
+Theorem colimit_unicity `{Funext} {G : Graph} {D : Diagram G} {Q1 Q2 : Type}
+  (HQ1 : IsColimit D Q1) (HQ2 : IsColimit D Q2)
+  : Q1 &lt;~&gt; Q2.
+Proof.
+  srapply equiv_functor_colimit.
+  srapply (Build_diagram_equiv (diagram_idmap D)).
+Defined.
+
+<div class="paragraph"> </div>
+
+
+<div class="paragraph"> </div>
+
+Theorem colimit_adjoint `{Funext} {G : Graph} {D : Diagram G} {C : Type}
+  : (Colimit D -&gt; C) &lt;~&gt; DiagramMap D (diagram_const C).
+Proof.
+  symmetry.
+  refine (equiv_colimit_rec C oE _).
+  apply equiv_diagram_const_cocone.
+Defined.
+
+<div class="paragraph"> </div>
+
+</div>
+<div class="code">
+</div>
+</div>
+
+<div id="footer">
+<hr/><a href="index.html">Index</a><hr/>This page has been generated by <a href="http://coq.inria.fr/">coqdoc</a>
+</div>
+
+</div>
+
+</body>
+</html>

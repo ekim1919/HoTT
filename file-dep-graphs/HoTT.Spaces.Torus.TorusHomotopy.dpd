@@ -1,0 +1,6 @@
+N: 1 "Pi1Torus" [body=yes, kind=cnst, prop=no, path="TorusHomotopy", ];
+N: 5 "is1type_Torus" [body=yes, kind=cnst, prop=no, path="TorusHomotopy", ];
+N: 4 "isconnected_Torus" [body=yes, kind=cnst, prop=no, path="TorusHomotopy", ];
+N: 3 "loops_torus" [body=yes, kind=cnst, prop=no, path="TorusHomotopy", ];
+N: 2 "pequiv_torus_prod_circles" [body=yes, kind=cnst, prop=no, path="TorusHomotopy", ];
+E: 1 2 [weight=1, ];

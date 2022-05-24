@@ -1,0 +1,5 @@
+N: 5 "test1" [body=yes, kind=cnst, prop=no, path="ring_tac", ];
+N: 4 "test2" [body=yes, kind=cnst, prop=no, path="ring_tac", ];
+N: 3 "test3" [body=yes, kind=cnst, prop=no, path="ring_tac", ];
+N: 2 "test4" [body=yes, kind=cnst, prop=no, path="ring_tac", ];
+N: 1 "test5" [body=yes, kind=cnst, prop=no, path="ring_tac", ];

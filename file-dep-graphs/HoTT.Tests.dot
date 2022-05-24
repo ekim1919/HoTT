@@ -1,0 +1,86 @@
+digraph HoTT_Tests {
+  graph [ratio=0.5]
+  node [style=filled]
+Tests_PR_1382_Unnamed_thm4 [label="Unnamed_thm4", URL=<Tests.html#PR_1382.Unnamed_thm4>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_PR_1382_A_sind [label="A_sind", URL=<Tests.html#PR_1382.A_sind>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_PR_1382_A_rec [label="A_rec", URL=<Tests.html#PR_1382.A_rec>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_PR_1382_A_ind [label="A_ind", URL=<Tests.html#PR_1382.A_ind>, peripheries=3, fillcolor="#7FFFD4"] ;
+Tests_PR_1382_A_rect [label="A_rect", URL=<Tests.html#PR_1382.A_rect>, fillcolor="#F070D1"] ;
+Tests_PR_1382_B [label="B", URL=<Tests.html#PR_1382.B>, fillcolor="#7FAAFF"] ;
+Tests_PR_1382_A [label="A", URL=<Tests.html#PR_1382.A>, fillcolor="#E2CDFA"] ;
+Tests_PR_1382_Unnamed_thm3 [label="Unnamed_thm3", URL=<Tests.html#PR_1382.Unnamed_thm3>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_PR_1382_Unnamed_thm2 [label="Unnamed_thm2", URL=<Tests.html#PR_1382.Unnamed_thm2>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_PR_1382_Unnamed_thm1 [label="Unnamed_thm1", URL=<Tests.html#PR_1382.Unnamed_thm1>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_PR_1382_Unnamed_thm0 [label="Unnamed_thm0", URL=<Tests.html#PR_1382.Unnamed_thm0>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_PR_1382_Unnamed_thm [label="Unnamed_thm", URL=<Tests.html#PR_1382.Unnamed_thm>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_Issue_973_hd [label="hd", URL=<Tests.html#Issue_973.hd>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_Issue_973_vec_sind [label="vec_sind", URL=<Tests.html#Issue_973.vec_sind>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_Issue_973_vec_rec [label="vec_rec", URL=<Tests.html#Issue_973.vec_rec>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_Issue_973_vec_ind [label="vec_ind", URL=<Tests.html#Issue_973.vec_ind>, peripheries=3, fillcolor="#7FFFD4"] ;
+Tests_Issue_973_vec_rect [label="vec_rect", URL=<Tests.html#Issue_973.vec_rect>, fillcolor="#F070D1"] ;
+Tests_Issue_973_cons [label="cons", URL=<Tests.html#Issue_973.cons>, fillcolor="#7FAAFF"] ;
+Tests_Issue_973_nil [label="nil", URL=<Tests.html#Issue_973.nil>, fillcolor="#7FAAFF"] ;
+Tests_Issue_973_vec [label="vec", URL=<Tests.html#Issue_973.vec>, fillcolor="#E2CDFA"] ;
+Tests_Issue_1358_bar_ [label="bar'", URL=<Tests.html#Issue_1358.bar'>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_Issue_1358_bar [label="bar", URL=<Tests.html#Issue_1358.bar>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_Issue_1358_foo [label="foo", URL=<Tests.html#Issue_1358.foo>, peripheries=3, fillcolor="#FACDEF"] ;
+Tests_Issue_1358_A [label="A", URL=<Tests.html#Issue_1358.A>, fillcolor="#FACDEF"] ;
+Tests_Issue754_1_nat_discr [label="nat_discr", URL=<Tests.html#Issue754_1.nat_discr>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_Issue754_1_equiv_path_nat [label="equiv_path_nat", URL=<Tests.html#Issue754_1.equiv_path_nat>, fillcolor="#FACDEF"] ;
+Tests_Issue754_1_code_nat [label="code_nat", URL=<Tests.html#Issue754_1.code_nat>, fillcolor="#F070D1"] ;
+Tests_Issue754_1_nat_sind [label="nat_sind", URL=<Tests.html#Issue754_1.nat_sind>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_Issue754_1_nat_rec [label="nat_rec", URL=<Tests.html#Issue754_1.nat_rec>, peripheries=3, fillcolor="#F070D1"] ;
+Tests_Issue754_1_nat_ind [label="nat_ind", URL=<Tests.html#Issue754_1.nat_ind>, peripheries=3, fillcolor="#7FFFD4"] ;
+Tests_Issue754_1_nat_rect [label="nat_rect", URL=<Tests.html#Issue754_1.nat_rect>, fillcolor="#F070D1"] ;
+Tests_Issue754_1_S [label="S", URL=<Tests.html#Issue754_1.S>, fillcolor="#7FAAFF"] ;
+Tests_Issue754_1_O [label="O", URL=<Tests.html#Issue754_1.O>, fillcolor="#7FAAFF"] ;
+Tests_Issue754_1_nat [label="nat", URL=<Tests.html#Issue754_1.nat>, fillcolor="#E2CDFA"] ;
+  Tests_PR_1382_Unnamed_thm4 -> Tests_PR_1382_B [] ;
+  Tests_PR_1382_Unnamed_thm4 -> Tests_PR_1382_A [] ;
+  Tests_PR_1382_A_sind -> Tests_PR_1382_B [] ;
+  Tests_PR_1382_A_sind -> Tests_PR_1382_A [] ;
+  Tests_PR_1382_A_rec -> Tests_PR_1382_A_rect [] ;
+  Tests_PR_1382_A_ind -> Tests_PR_1382_B [] ;
+  Tests_PR_1382_A_ind -> Tests_PR_1382_A [] ;
+  Tests_PR_1382_A_rect -> Tests_PR_1382_B [] ;
+  Tests_PR_1382_A_rect -> Tests_PR_1382_A [] ;
+  Tests_Issue_973_hd -> Tests_Issue_973_vec [] ;
+  Tests_Issue_973_vec_sind -> Tests_Issue_973_cons [] ;
+  Tests_Issue_973_vec_sind -> Tests_Issue_973_nil [] ;
+  Tests_Issue_973_vec_sind -> Tests_Issue_973_vec [] ;
+  Tests_Issue_973_vec_rec -> Tests_Issue_973_vec_rect [] ;
+  Tests_Issue_973_vec_ind -> Tests_Issue_973_cons [] ;
+  Tests_Issue_973_vec_ind -> Tests_Issue_973_nil [] ;
+  Tests_Issue_973_vec_ind -> Tests_Issue_973_vec [] ;
+  Tests_Issue_973_vec_rect -> Tests_Issue_973_cons [] ;
+  Tests_Issue_973_vec_rect -> Tests_Issue_973_nil [] ;
+  Tests_Issue_973_vec_rect -> Tests_Issue_973_vec [] ;
+  Tests_Issue_1358_bar_ -> Tests_Issue_1358_A [] ;
+  Tests_Issue_1358_bar -> Tests_Issue_1358_A [] ;
+  Tests_Issue_1358_foo -> Tests_Issue_1358_A [] ;
+  Tests_Issue754_1_nat_discr -> Tests_Issue754_1_equiv_path_nat [] ;
+  Tests_Issue754_1_nat_discr -> Tests_Issue754_1_S [] ;
+  Tests_Issue754_1_nat_discr -> Tests_Issue754_1_O [] ;
+  Tests_Issue754_1_equiv_path_nat -> Tests_Issue754_1_code_nat [] ;
+  Tests_Issue754_1_code_nat -> Tests_Issue754_1_nat [] ;
+  Tests_Issue754_1_nat_sind -> Tests_Issue754_1_S [] ;
+  Tests_Issue754_1_nat_sind -> Tests_Issue754_1_O [] ;
+  Tests_Issue754_1_nat_sind -> Tests_Issue754_1_nat [] ;
+  Tests_Issue754_1_nat_rec -> Tests_Issue754_1_nat_rect [] ;
+  Tests_Issue754_1_nat_ind -> Tests_Issue754_1_S [] ;
+  Tests_Issue754_1_nat_ind -> Tests_Issue754_1_O [] ;
+  Tests_Issue754_1_nat_ind -> Tests_Issue754_1_nat [] ;
+  Tests_Issue754_1_nat_rect -> Tests_Issue754_1_S [] ;
+  Tests_Issue754_1_nat_rect -> Tests_Issue754_1_O [] ;
+  Tests_Issue754_1_nat_rect -> Tests_Issue754_1_nat [] ;
+subgraph cluster_Tests { label="Tests"; fillcolor="#FFFFC3"; labeljust=l; style=filled 
+subgraph cluster_Tests_Issue754_1 { label="Issue754_1"; fillcolor="#FFFFA3"; labeljust=l; style=filled 
+Tests_Issue754_1_nat; Tests_Issue754_1_O; Tests_Issue754_1_S; Tests_Issue754_1_nat_rect; Tests_Issue754_1_nat_ind; Tests_Issue754_1_nat_rec; Tests_Issue754_1_nat_sind; Tests_Issue754_1_code_nat; Tests_Issue754_1_equiv_path_nat; Tests_Issue754_1_nat_discr; };
+subgraph cluster_Tests_Issue_1358 { label="Issue_1358"; fillcolor="#FFFFA3"; labeljust=l; style=filled 
+Tests_Issue_1358_A; Tests_Issue_1358_foo; Tests_Issue_1358_bar; Tests_Issue_1358_bar_; };
+subgraph cluster_Tests_Issue_973 { label="Issue_973"; fillcolor="#FFFFA3"; labeljust=l; style=filled 
+Tests_Issue_973_vec; Tests_Issue_973_nil; Tests_Issue_973_cons; Tests_Issue_973_vec_rect; Tests_Issue_973_vec_ind; Tests_Issue_973_vec_rec; Tests_Issue_973_vec_sind; Tests_Issue_973_hd; };
+subgraph cluster_Tests_PR_1382 { label="PR_1382"; fillcolor="#FFFFA3"; labeljust=l; style=filled 
+Tests_PR_1382_Unnamed_thm; Tests_PR_1382_Unnamed_thm0; Tests_PR_1382_Unnamed_thm1; Tests_PR_1382_Unnamed_thm2; Tests_PR_1382_Unnamed_thm3; Tests_PR_1382_A; Tests_PR_1382_B; Tests_PR_1382_A_rect; Tests_PR_1382_A_ind; Tests_PR_1382_A_rec; Tests_PR_1382_A_sind; Tests_PR_1382_Unnamed_thm4; };
+};
+} /* END */

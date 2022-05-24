@@ -1,0 +1,9 @@
+N: 1 "ishprop_phomotopy_hset" [body=yes, kind=cnst, prop=no, path="pHomotopy", ];
+N: 2 "phomotopy_hcompose" [body=yes, kind=cnst, prop=no, path="pHomotopy", ];
+N: 8 "phomotopy_inverse_1" [body=yes, kind=cnst, prop=no, path="pHomotopy", ];
+N: 4 "phomotopy_path2" [body=yes, kind=cnst, prop=no, path="pHomotopy", ];
+N: 3 "phomotopy_path_V" [body=yes, kind=cnst, prop=no, path="pHomotopy", ];
+N: 7 "phomotopy_path_pp" [body=yes, kind=cnst, prop=no, path="pHomotopy", ];
+N: 6 "pmap_postwhisker" [body=yes, kind=cnst, prop=no, path="pHomotopy", ];
+N: 5 "pmap_prewhisker" [body=yes, kind=cnst, prop=no, path="pHomotopy", ];
+E: 3 8 [weight=1, ];
